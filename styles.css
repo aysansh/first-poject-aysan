@@ -297,7 +297,7 @@ font-size: 24px;
 }
 
 .analys{
-   flex-direction: column; 
+flex-direction: column; 
 align-items: center;
 text-align: center;
 display: flex;
@@ -305,35 +305,54 @@ max-width: var(--content-width);
 margin: auto;
 padding-top: 4rem;
 padding-bottom: 4rem;
+}
 
+.analys .title-analys h2{
+    margin: 0px;
+padding-bottom: 16px;
 }
-.analys .title-analys{
-}
+
 .analys .text-analys{
-width: 70%;
-}
+color: #728a96;
+font-size: 20px;
+line-height: 30px;
+font-weight: 400;
+padding:0 16px 32px 16px ;
 
+}
+.analys .text-analys p{
+    margin: 0px;
+}
 .analys .link-analys{
     display: flex;
     font-weight: var(--weight-a);
     background-color: var(--color-a);  
     border-radius: 40px;
-    padding: 15px 25px; 
+    padding: 18px 32px; 
     align-items: center;
     margin-bottom: 40px;
+    font-size: 19px;
 }
 .analys .link-analys svg{
     padding-right: 5px;
+    width: 28px;
+    height: 28px;
 }
 .analys .time-table{
-border: 1px solid;
-border-radius: 40px;
-max-width:var(--content-width);
-margin: auto;
+    
+
 align-items: center;
 justify-content: space-between;
 text-align: center;
 }
+.analys .time-table .inner-content{
+    border: 1px solid;
+    border-radius: 40px;
+    max-width:  100%; 
+    margin: auto;
+}
+
+    
 .analys  .inner-content{
     display: flex;
     align-items: center;
@@ -341,13 +360,13 @@ text-align: center;
     
 }
 .analys .time-table .first{
-    width: 20%;
+    width: 25%;
     font-size: 20px;
     line-height: 30px;
     font-weight: 700;
 }
 .analys .time-table .second{
-    width: 20%;
+    width: 25%;
     font-size: 16px;
     line-height: 24px;
     text-align: center;
@@ -355,7 +374,7 @@ text-align: center;
 }
 
 .analys .time-table .third{
-    width: 20%;
+    width: 25%;
     font-size: 16px;
     line-height: 24px;
     text-align: center;
@@ -363,8 +382,29 @@ text-align: center;
 }
 
 .analys .time-table .forth{
-    width: 20%;font-size: 16px;
+    width: 25%;font-size: 16px;
     line-height: 24px;
     text-align: center;
 
+}
+
+#subtitle {
+    display: flex;
+    
+    width: 70%;
+    text-align: center;
+color: #728a96;
+}
+#subtitle a{
+    color: #728a96;  
+}
+
+.developers{
+    width: 100%;
+    max-width: var(--content-width);
+  background-color: #303034; 
+}
+
+.developers .botton{
+    display: flex;
 }
