@@ -305,6 +305,7 @@ max-width: var(--content-width);
 margin: auto;
 padding-top: 4rem;
 padding-bottom: 4rem;
+justify-items: space-between;
 }
 
 .analys .title-analys h2{
@@ -312,7 +313,7 @@ padding-bottom: 4rem;
 padding-bottom: 16px;
 }
 
-.analys .text-analys{
+.analys .title-analys{
 color: #728a96;
 font-size: 20px;
 line-height: 30px;
@@ -320,18 +321,16 @@ font-weight: 400;
 padding:0 16px 32px 16px ;
 
 }
-.analys .text-analys p{
+.analys p{
     margin: 0px;
 }
-.analys .link-analys{
-    display: flex;
-    font-weight: var(--weight-a);
-    background-color: var(--color-a);  
+.analys #learn{
+    background-color:#08c;
     border-radius: 40px;
-    padding: 18px 32px; 
-    align-items: center;
-    margin-bottom: 40px;
-    font-size: 19px;
+    padding: 16px 32px;
+    font-size: 18px;
+    font-weight: 700;
+    margin-right: 20px;
 }
 .analys .link-analys svg{
     padding-right: 5px;
@@ -339,17 +338,16 @@ padding:0 16px 32px 16px ;
     height: 28px;
 }
 .analys .time-table{
-    
-
-align-items: center;
-justify-content: space-between;
-text-align: center;
+    border: 1px solid;
+    border-radius: 40px;  
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
 }
 .analys .time-table .inner-content{
-    border: 1px solid;
-    border-radius: 40px;
     max-width:  100%; 
     margin: auto;
+    border-collapse: collapse;
 }
 
     
@@ -401,10 +399,167 @@ color: #728a96;
 
 .developers{
     width: 100%;
-    max-width: var(--content-width);
-  background-color: #303034; 
+    background-color: #242429; 
+    padding: 64px 0;
 }
 
-.developers .botton{
+.developers .text-developers{
+    text-align: center;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    padding: 64px 0;
+    color: #fff;
+}
+.developers .text-developers h2{
+    margin: 0 0 16px 0;
+}
+.developers .text-developers p{
+    color: rgba(255,255,255,0.7);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-top: 0px;
+    margin-bottom: 40px;
+}
+.developers .text-developers .botton{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.developers .text-developers .botton #git{    
+    background-color:hsla(0,0%,100%,0.06);
+    border-radius: 40px;
+    padding: 16px 32px;
+    font-size: 18px;
+    font-weight: 700;
+}
+.developers .text-developers .botton #doc{    
+    background-color:#08c;
+    border-radius: 40px;
+    padding: 16px 32px;
+    font-size: 18px;
+    font-weight: 700; 
+}
+/* .developers .text-developers .botton svg{
+    color: white;
+    padding-right: 5px;
+} */
+/* .developers .text-developers .botton #docs{
+    background-color:#08c;
+    border-radius: 40px;
+    padding: 16px 32px;
+    font-size: 18px;
+    font-weight: 700;
+    margin-right: 20px;
+} */
+.developers .table-developers{
+    background-color: #323236;    
+    max-width: var(--content-width);
+    margin: auto;
+    border-radius: 45px;
+    overflow: hidden;
+}
+.developers .table-developers #bar{
+background-color: black;
+padding: 32px 0;
+max-width: var(--content-width);
+}
+.developers .table-developers .blockchain-content{
+    color: #fff;
+    display: flex;   
+}
+.developers .table-developers #bar .middle-dot{
+    background-color: yellow;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-left: 64px;
+}
+.developers .table-developers .left-column{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 32px 0px;
+}
+.developers .table-developers .left-column a{
+    padding: 16px 32px;
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: 700;
+}   
+.developers .table-developers .left-column #actor{
+    background-color: #39393c;
+} 
+.developers .table-developers .right-column{
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 28px 50px;
+}
+.developers .table-developers .right-column a{
+    color: #07a0ec;
+    margin-top: 64px;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 600;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+}
+.developers .table-developers .right-column .link{
+    /* margin: 50px 0px; */
+    display: flex;
+    justify-content: space-between;   
+}
+.developers .table-developers .right-column h3{
+    margin: 0%;
+    font-size: 28px;
+    line-height: 38px;
+    font-weight: 700;
+    font-family: IBMPlexMono,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+}
+.developers .table-developers .right-column p{
+    margin: 32px 0;
+    font-size: 20px;
+    line-height: 30px;
+    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+}
+
+
+.community{
+    display: flex;
+    max-width: var(--content-width);
+    margin: auto;
+    padding: 128px 0;
+}
+.community .text-community{
+    width: 50%;
+}
+.community .text-community h2{
+margin-bottom: 0px;
+}
+.community .text-community p{
+    color: var(--color-p);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+}
+.community .text-community .social{
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--color-a); 
+    margin-top: 32px;
+
+}
+.community .text-community .social a{
+    color: var(--color-a);
+    padding-right: 16px;
+}
+.community .pic-community{
+    width: 50%;
+}
+.community .pic-community img{
+    width: 100%;
 }
