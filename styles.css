@@ -1,8 +1,10 @@
 :root{
 --content-width:1150px;
---color-p: #728a96;
+--color-p1: #bcbcbe;
+--color-p2:#788f9b;
 --color-a: #0088cc;
 --weight-a: 700;
+--font-p:font-family: 'Mulish', sans-serif;
 }
 
 *,*::before,*::after{
@@ -14,7 +16,7 @@ box-sizing: border-box;
     margin: 0%;
 }
 body{
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
     font-family: Mulish,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
 }
 
@@ -23,21 +25,32 @@ color: rgb(247, 249, 251);
 width: 100%;
 color:  #fff;
 }
-nav{display: flex;
-justify-content: space-between;
-align-items: center;
-padding: 16px 0px;
+nav{
 width: 100%;
-max-width: 1150px;
-margin: auto;
-color: white;
-/*position: fixed;*/
-font-size: 18px;
-font-weight: 700;
+position: fixed;
+background-color: rgb(35, 35, 40, 0.9);
+z-index: 10;
+}
+.headline{
+    display: flex;
+    justify-content: space-between; 
+    max-width: 1150px;
+    margin: auto;
+    width: 100%;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 12px 0px 20px 0;
+    color: white;
+}
+.main1 nav .git{
+    position: relative;
 }
 .main1 nav .git img{
     padding-right: 5px;
-color: white;
+    color: white;
+    position: absolute;
+
 }
 .content{
     display: flex;
@@ -88,10 +101,9 @@ a{
     font-size: 20px;
    padding-bottom: 40px;
     margin: 0%;
-    font-size: 20px;
-    font-weight: 400;
+    font-weight: 0;
     line-height: 30px;
-    color: var(--color-p);
+    color: var(--color-p1);
 }
 .main1 .content .text .botton{
 display: flex;
@@ -126,6 +138,8 @@ h2{
     line-height: 30px;
     color: rgb(114, 138, 150); 
 }
+
+
 .info{
     flex-direction:column ;
 }
@@ -148,7 +162,7 @@ padding-left: 20px;
 padding-right: 20px;
 font-weight: 400;
 line-height: 30px;
-color:var(--color-p);
+color:var(--color-p2);
 }
 .info .counter{
 display: flex;
@@ -158,10 +172,10 @@ justify-content: space-between;
 .info .counter .stat{
     width: 31%;
     background-color:rgb(247, 249, 251);
-border-radius: 20px;
-padding: 20px;
-position: relative;
-overflow: hidden;
+    border-radius: 20px;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
 }
 .info .counter .stat .stat-title{
     font-size: 20px;
@@ -180,6 +194,8 @@ font-weight: 700;
     transform: translate(30%, -50%);
  
 }
+
+
 .toncoin {
  display: flex;   
  background-color:  #f7f9fb;
@@ -224,14 +240,12 @@ font-weight: 700;
 .timeline{
     display: block;
 }
-
 .timeline .stages{
     display: flex;
     flex-direction: row; 
     width: 100%;
     justify-content: space-between;
 }
-
 .timeline .stages .steps{    
 width: 30%;
 
@@ -246,12 +260,13 @@ font-size: 24px;
      font-size: 20px;
      font-weight: 400;
      line-height: 30px;
-     color:var(--color-p);
+     color:var(--color-p2);
 }
 .timeline .stages .steps a{
     color: var(--color-a);
     font-weight: var(--weight-a);
 }
+
 
 .wallet{
     background-color:  #f7f9fb;
@@ -280,11 +295,10 @@ font-size: 24px;
     font-size: 20px;
     font-weight: 400;
     line-height: 30px;
-    color:var(--color-p);
+    color:var(--color-p2);
     margin-top: 20px;
     margin-bottom: 60px;
 }
-
 .wallet .info-wallet .text-wallet a{
     color: white;
     font-weight: var(--weight-a);
@@ -295,6 +309,7 @@ font-size: 24px;
     font-weight: 700;
     margin-top: 20px;
 }
+
 
 .analys{
 flex-direction: column; 
@@ -307,14 +322,11 @@ padding-top: 4rem;
 padding-bottom: 4rem;
 justify-items: space-between;
 }
-
 .analys .title-analys h2{
     margin: 0px;
 padding-bottom: 16px;
 }
-
 .analys .title-analys{
-color: #728a96;
 font-size: 20px;
 line-height: 30px;
 font-weight: 400;
@@ -323,6 +335,11 @@ padding:0 16px 32px 16px ;
 }
 .analys p{
     margin: 0px;
+    color: #728a96;
+    /* font-size: 20px; */
+line-height: 30px;
+/* font-weight: 400; */
+padding:0 16px 32px 16px ;
 }
 .analys #learn{
     background-color:#08c;
@@ -338,6 +355,7 @@ padding:0 16px 32px 16px ;
     height: 28px;
 }
 .analys .time-table{
+    display: flex;
     border: 1px solid;
     border-radius: 40px;  
     align-items: center;
@@ -348,9 +366,7 @@ padding:0 16px 32px 16px ;
     max-width:  100%; 
     margin: auto;
     border-collapse: collapse;
-}
-
-    
+}    
 .analys  .inner-content{
     display: flex;
     align-items: center;
@@ -370,7 +386,6 @@ padding:0 16px 32px 16px ;
     text-align: center;
 
 }
-
 .analys .time-table .third{
     width: 25%;
     font-size: 16px;
@@ -378,14 +393,12 @@ padding:0 16px 32px 16px ;
     text-align: center;
 
 }
-
 .analys .time-table .forth{
     width: 25%;font-size: 16px;
     line-height: 24px;
     text-align: center;
 
 }
-
 #subtitle {
     display: flex;
     
@@ -397,12 +410,13 @@ color: #728a96;
     color: #728a96;  
 }
 
+
 .developers{
     width: 100%;
     background-color: #242429; 
     padding: 64px 0;
+   
 }
-
 .developers .text-developers{
     text-align: center;
     display: flex;
@@ -423,7 +437,12 @@ color: #728a96;
     margin-top: 0px;
     margin-bottom: 40px;
 }
-.developers .text-developers .botton{
+.developers .text-developers .botton {
+    display: flex;
+    align-items: center;
+
+}
+.developers .text-developers .botton a{
     display: flex;
     align-items: center;
     text-align: center;
@@ -434,6 +453,7 @@ color: #728a96;
     padding: 16px 32px;
     font-size: 18px;
     font-weight: 700;
+
 }
 .developers .text-developers .botton #doc{    
     background-color:#08c;
@@ -442,24 +462,14 @@ color: #728a96;
     font-size: 18px;
     font-weight: 700; 
 }
-/* .developers .text-developers .botton svg{
-    color: white;
-    padding-right: 5px;
-} */
-/* .developers .text-developers .botton #docs{
-    background-color:#08c;
-    border-radius: 40px;
-    padding: 16px 32px;
-    font-size: 18px;
-    font-weight: 700;
-    margin-right: 20px;
-} */
 .developers .table-developers{
+    width: 90%;
     background-color: #323236;    
     max-width: var(--content-width);
     margin: auto;
     border-radius: 45px;
     overflow: hidden;
+    font-family: "IBM Plex Mono", monospace;
 }
 .developers .table-developers #bar{
 background-color: black;
@@ -472,10 +482,11 @@ max-width: var(--content-width);
 }
 .developers .table-developers #bar .middle-dot{
     background-color: yellow;
-    width: 50px;
-    height: 50px;
+    width: 12px;
+    height: 12px;
     border-radius: 50%;
     margin-left: 64px;
+    display: inline-block;
 }
 .developers .table-developers .left-column{
     width: 25%;
@@ -499,6 +510,7 @@ max-width: var(--content-width);
     flex-direction: column;
     justify-content: space-between;
     padding: 28px 50px;
+    font-family: "IBM Plex Mono", monospace;
 }
 .developers .table-developers .right-column a{
     color: #07a0ec;
@@ -506,25 +518,32 @@ max-width: var(--content-width);
     font-size: 18px;
     line-height: 30px;
     font-weight: 600;
-    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+    font-family: var(--font-p)
 }
 .developers .table-developers .right-column .link{
     /* margin: 50px 0px; */
     display: flex;
     justify-content: space-between;   
+   
+}
+.developers .table-developers .right-column .link .privious{
+    color:#969698 ;
+}
+.developers .table-developers .right-column .link .next{
+    color: #fff;
 }
 .developers .table-developers .right-column h3{
     margin: 0%;
     font-size: 28px;
     line-height: 38px;
     font-weight: 700;
-    font-family: IBMPlexMono,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+    font-family: "IBM Plex Mono", monospace;
 }
 .developers .table-developers .right-column p{
     margin: 32px 0;
     font-size: 20px;
     line-height: 30px;
-    font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif;
+    font-family: "IBM Plex Mono", monospace;
 }
 
 
@@ -541,7 +560,7 @@ max-width: var(--content-width);
 margin-bottom: 0px;
 }
 .community .text-community p{
-    color: var(--color-p);
+    color: var(--color-p2);
     font-size: 20px;
     font-weight: 400;
     line-height: 30px;
@@ -562,4 +581,42 @@ margin-bottom: 0px;
 }
 .community .pic-community img{
     width: 100%;
+}
+
+
+.apps{
+    background-color:  #f7f9fb;
+    border-radius: 70px;
+    padding: 40px 110px;
+    
+}
+.apps .back{
+
+}
+.apps .back .text-apps{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+    margin: auto;
+}
+.apps .back .text-apps h2{
+    margin: 0;
+}
+.apps .back .text-apps p{
+    color: var(--color-p2);
+    font-size: 20px;
+    line-height: 30px;
+}
+.apps .back .botton{
+    background-color:#08c;
+    border-radius: 40px;
+    padding: 16px 32px;
+    font-size: 18px;
+    font-weight: 700;
+    /* box-sizing: content-box; */
+    width: fit-content;
+    text-align: center;
+
 }
