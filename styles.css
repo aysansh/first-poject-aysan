@@ -312,26 +312,26 @@ font-size: 24px;
 
 
 .analys{
-flex-direction: column; 
 align-items: center;
 text-align: center;
-display: flex;
 max-width: var(--content-width);
 margin: auto;
 padding-top: 4rem;
 padding-bottom: 4rem;
 justify-items: space-between;
 }
-.analys .title-analys h2{
-    margin: 0px;
-padding-bottom: 16px;
-}
+
 .analys .title-analys{
 font-size: 20px;
 line-height: 30px;
 font-weight: 400;
 padding:0 16px 32px 16px ;
-
+flex-direction: column; 
+display: flex;
+}
+.analys .title-analys h2{
+    margin: 0px;
+    padding-bottom: 16px;
 }
 .analys p{
     margin: 0px;
@@ -349,62 +349,26 @@ padding:0 16px 32px 16px ;
     font-weight: 700;
     margin-right: 20px;
 }
-.analys .link-analys svg{
+.link-analys svg{
     padding-right: 5px;
     width: 28px;
     height: 28px;
 }
 .analys .time-table{
     display: flex;
-    border: 1px solid;
-    border-radius: 40px;  
-    align-items: center;
-    justify-content: space-between;
-    text-align: center;
+    flex-direction: column;
+    flex-direction: row;
+
 }
-.analys .time-table .inner-content{
-    max-width:  100%; 
-    margin: auto;
-    border-collapse: collapse;
-}    
-.analys  .inner-content{
+.analys .time-table{
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    
-}
-.analys .time-table .first{
-    width: 25%;
-    font-size: 20px;
-    line-height: 30px;
-    font-weight: 700;
-}
-.analys .time-table .second{
-    width: 25%;
-    font-size: 16px;
-    line-height: 24px;
-    text-align: center;
-
-}
-.analys .time-table .third{
-    width: 25%;
-    font-size: 16px;
-    line-height: 24px;
-    text-align: center;
-
-}
-.analys .time-table .forth{
-    width: 25%;font-size: 16px;
-    line-height: 24px;
-    text-align: center;
-
 }
 #subtitle {
     display: flex;
-    
+    align-content: center;
     width: 70%;
     text-align: center;
-color: #728a96;
+    color: #728a96;
 }
 #subtitle a{
     color: #728a96;  
@@ -587,29 +551,31 @@ margin-bottom: 0px;
 .apps{
     background-color:  #f7f9fb;
     border-radius: 70px;
-    padding: 40px 110px;
-    
+    padding: 60px 100px;
+    box-sizing: content-box;
+    max-width: var(--content-width);
+    margin: auto;
 }
-.apps .back{
 
-}
-.apps .back .text-apps{
+.apps .text-apps{
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 40%;
+    width: 60%;
     margin: auto;
+    align-items: center;
+   
 }
-.apps .back .text-apps h2{
+.apps .text-apps h2{
     margin: 0;
 }
-.apps .back .text-apps p{
+.apps .text-apps p{
     color: var(--color-p2);
     font-size: 20px;
     line-height: 30px;
 }
-.apps .back .botton{
+.apps .botton{
     background-color:#08c;
     border-radius: 40px;
     padding: 16px 32px;
@@ -620,3 +586,27 @@ margin-bottom: 0px;
     text-align: center;
 
 }
+.apps .pic-apps{
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+.apps .pic-apps img{
+    width: 110px;
+    height: 110px;
+    border-radius: 28px;
+    padding: 16px;
+    /* width: 100%; */
+}
+.apps .pic-apps .left{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.apps .pic-apps .right{
+    width: 50%;
+    display: flex;
+    
+}
+
