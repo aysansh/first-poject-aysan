@@ -43,21 +43,33 @@ z-index: 10;
     padding: 12px 0px 20px 0;
     color: white;
 }
-.main1 nav .git{
+.main1 nav #git{
     position: relative;
+    padding: 16px 32px;
+    font-size: 18px;
+    font-weight: 700;
+
 }
-.main1 nav .git img{
-    padding-right: 5px;
+.main1 nav #git a{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.main1 nav #git svg{
+    margin-right: 0px;
     color: white;
     position: absolute;
+   left: 0;
+
 
 }
 .content{
     display: flex;
     max-width: var(--content-width);
     margin: auto;
-    padding-top: 4rem;
+    padding-top: 6rem;
     padding-bottom: 4rem;
+   
    
 }
 .main1 .content .text{
@@ -66,12 +78,17 @@ z-index: 10;
 }
 .main1 .content .dimond{
     width: 30%;
+    align-content: center;   
+    position: relative;
 }
 .main1 .content .dimond video{
     width: 100%;
+    position: absolute;
+    top: 6%;
 }
 .main1 .logo{
     color: white;
+    border-style:none;
 }
 .main1 .links{
     display: flex;
@@ -108,6 +125,7 @@ a{
 .main1 .content .text .botton{
 display: flex;
 align-items: center;
+text-align: center;
 }
 .main1 .content .text .botton .join{
     background-color:#08c;
@@ -117,16 +135,20 @@ align-items: center;
     font-weight: 700;
     margin-right: 20px;
 }
-.main1 .content .text .botton .github{
+.main1 .content .text .botton #git a{
     background-color:hsla(0,0%,100%,0.06);
     border-radius: 40px;
     padding: 16px 32px;
     font-size: 18px;
     font-weight: 700;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    
 }
-.main1 .content .text .botton .github svg{
+.main1 .content .text .botton #git svg{
     color: white;
-    padding-right: 5px;
+    margin-right: 8px;
 }
 h2{ 
  font-size: 55px; 
@@ -209,7 +231,8 @@ font-weight: 700;
 .toncoin.content{
     
 }
-#ton{display: inline-block;
+#ton{
+    display: inline-block;
     border: 1px solid;
     border-radius: 7px;
     padding: 2px 11px;
@@ -372,12 +395,14 @@ padding:0 16px 32px 16px ;
 }
 #subtitle a{
     color: #728a96;  
+    text-align: center;
+    margin: auto;
 }
 
 
 .developers{
     width: 100%;
-    background-color: #242429; 
+    background-color: #303033; 
     padding: 64px 0;
    
 }
@@ -414,10 +439,12 @@ padding:0 16px 32px 16px ;
 .developers .text-developers .botton #git{    
     background-color:hsla(0,0%,100%,0.06);
     border-radius: 40px;
-    padding: 16px 32px;
+    padding: 16px 48px;
     font-size: 18px;
     font-weight: 700;
-
+}
+.developers .text-developers .botton #git svg{
+margin-right: 8px;
 }
 .developers .text-developers .botton #doc{    
     background-color:#08c;
@@ -425,10 +452,11 @@ padding:0 16px 32px 16px ;
     padding: 16px 32px;
     font-size: 18px;
     font-weight: 700; 
+    margin-right:20px;
 }
 .developers .table-developers{
     width: 90%;
-    background-color: #323236;    
+    background-color: #333336;    
     max-width: var(--content-width);
     margin: auto;
     border-radius: 45px;
@@ -436,7 +464,7 @@ padding:0 16px 32px 16px ;
     font-family: "IBM Plex Mono", monospace;
 }
 .developers .table-developers #bar{
-background-color: black;
+background-color: #29292e;
 padding: 32px 0;
 max-width: var(--content-width);
 }
@@ -506,8 +534,14 @@ max-width: var(--content-width);
 .developers .table-developers .right-column p{
     margin: 32px 0;
     font-size: 20px;
-    line-height: 30px;
+    line-height: 35px;
     font-family: "IBM Plex Mono", monospace;
+    font-weight: 400;
+}
+.developers .table-developers .right-column p a{
+    color: #fff;
+    text-decoration: underline;
+    font-weight: 400;
 }
 
 
@@ -556,7 +590,6 @@ margin-bottom: 0px;
     max-width: var(--content-width);
     margin: auto;
 }
-
 .apps .text-apps{
     text-align: center;
     display: flex;
@@ -610,3 +643,68 @@ margin-bottom: 0px;
     
 }
 
+.everyone{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: var(--content-width);
+    align-content: center;
+    margin: auto;
+    padding: 128px 0;
+}
+.everyone .everyone-text{
+    text-align: center;
+
+}
+.everyone .everyone-text h2{
+  margin: 0%;
+}
+.everyone .everyone-text p{
+    color: var(--color-p2);
+    font-size: 20px;
+    line-height: 30px;
+}
+.everyone .everyone-pics {
+display: flex;
+justify-content: space-between;
+
+}
+.everyone .everyone-pics .pic1{
+    width: 32%;
+}
+.everyone .everyone-pics .pic2{
+    width: 32%;
+}
+.everyone .everyone-pics .pic3{
+    width: 32%;
+}
+.everyone .everyone-pics img{
+    width: 100%;
+    border-radius: 24px;
+    /* padding: 8px; */
+}
+.everyone .everyone-pics a{
+    color: black;    
+}
+.everyone .everyone-pics a .text{
+    margin-top: 24px;
+    padding:  16px;
+}
+.everyone .everyone-pics a h3{
+    font-size: 24px;
+    line-height: 30px;
+    margin:0; 
+    font-weight: 700;
+}
+.everyone .everyone-pics a p{
+    color: var(--color-p2);
+    font-size: 20px;
+    line-height: 30px;
+    margin: 0%;
+}
+.everyone .everyone-pics a .button{
+    color: var(--color-a);
+    font-size: 18px;
+    font-weight: 800;
+    margin-top: 16px;
+}
